@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "ts-node ./src/app.ts",
+    "prod": "node ./dist/app.js",
+    "deploy": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "express": "^4.17.1"
+  }
+}

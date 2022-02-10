@@ -1,0 +1,19 @@
+<%- include('../templates/header') %>
+    <div class="container">
+        <form action="/post" method="post" class="form-signin">
+            <%
+                data?.sucesso ? `Post criado com sucesso` : `Post com erro`
+            %>
+            <h2 class="form-signin-heading">Cadastro de Post</h2>
+                <label for="Titulo" class="sr-only" value="<%- data?.Titulo %>">Titulo</label>
+                <input id="Titulo" placeholder="Titulo do POST" class="form-control" name="Titulo" />
+                <label for="Tags" class="sr-only">Tags</label>
+                <input id="Tags" name="Tags" placeholder="Tags do POST" class="form-control" value="<%- data?.Tags %>"/>
+                <label for ="Content" class="sr-only">Conteúdo</label>
+                <textarea id="Content" name="Content" placeholder="Texto do POST" class="form-control"><%- data?.Content %></textarea>
+            <button class="btn btn-sm btn-primary " type="submit">Salvar</button>
+        </form>
+    </div>
+
+</body>
+</html>
