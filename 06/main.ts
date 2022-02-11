@@ -44,7 +44,7 @@ const Dados : Readonly<string> = "";
 
 const cast = Pessoa;
 
-let novaPessoa : Pessoa = Object.setPrototypeOf({ nome: "Wesdras", sobrenome: 'Alves 222', teste: 'TESTE'} , cast.prototype);
+let novaPessoa : Pessoa = Object.setPrototypeOf({ nome: "Wesdras", sobrenome: 'Alves 222', teste: 'TESTE'} , Pessoa.prototype);
 
 
 // novaPessoa.sobrenome = "Alves 2"
