@@ -1,7 +1,5 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { AuthModule } from './modules/auth/auth.module';
 import { PacienteModule } from './modules/paciente/paciente.module';
 import {PassportModule} from '@nestjs/passport'
@@ -20,8 +18,6 @@ import {TypeOrmModule} from '@nestjs/typeorm'
     TypeOrmModule.forRoot(),
     AuthModule, 
     PacienteModule,
-    UsuarioModule],
-  controllers: [AppController],
-  providers: [AppService],
+    UsuarioModule]
 })
 export class AppModule {}
