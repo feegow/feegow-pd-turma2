@@ -139,3 +139,5 @@ const post = new PostNegocio("Post1", "Texto", new Date());
 
 console.log(post.BuscarPost(1));
 console.log(post.BuscarPart1Post(1));
+
+
